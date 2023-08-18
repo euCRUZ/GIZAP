@@ -30,5 +30,4 @@ def homepage():
 
 
 # rodar o app
-socketio.run(app, host="192.168.0.164")  # ipconfig --> IPv4
-# para tacar no heroku, talvez fazer uma alteração aqui
+socketio.run(app, host="192.168.0.164")  # to put your local ip: ipconfig --> IPv4
