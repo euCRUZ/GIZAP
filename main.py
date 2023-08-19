@@ -30,4 +30,4 @@ def homepage():
 
 
 # rodar o app
-socketio.run(app, host="192.168.0.164")  # to put your local ip: ipconfig --> IPv4
+socketio.run(app, host=" ")  # to put your local ip: ipconfig --> IPv4
