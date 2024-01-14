@@ -4,7 +4,7 @@
 # ambiente virtual -> criar um novo tda vez para novos (.venv)
 # local no pc para todas as instalações EXCLUSIVAS desse site
 
-# http://localhost:5000
+# http://localhost:5000pip install python-socketio
 
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send
