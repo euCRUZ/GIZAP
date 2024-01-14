@@ -14,14 +14,13 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowerd_origins="*")  # túnel
 
 
-@socketio.on("message")  # funcionalidade de enviar msg
+# funcionalidade de enviar msg
+@socketio.on("message")  
 def gerenciar_mensagem(mensagem):
     send(mensagem, broadcast=True)
 
 # criar a nossa 1ª página = 1ª rota (td o que vem depois da "/")
-
 # decorator --> atribuí uma funcionalidade para o que está abaixo dele
-
 
 @app.route("/")
 def homepage():
@@ -30,4 +29,4 @@ def homepage():
 
 
 # rodar o app
-socketio.run(app, host=" ")  # to put your local ip: ipconfig --> IPv4
+socketio.run(app, host="")  # to put your local ip: ipconfig --> IPv4
